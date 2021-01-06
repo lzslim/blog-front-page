@@ -1,16 +1,16 @@
-<div class="container-fluid pt-2">
+<div class="container-fluid pt-2 bg-teal">
   <div class="row">
     <div class="col-2">
         <h5 class="text-dark pb-2">最近文章</h5>
         <div *ngFor="let recentArt of recentArticles">
-          <a href="#">
+          <a [routerLink]="['/article', recentArt.id]">
             <small class="text-muted pb-2">{{ recentArt.title }}</small>
           </a>
         </div>
     </div>
     <div class="col-sm-4">
       <div *ngFor="let art of articles" class="m-2">
-        <a href="#">
+        <a [routerLink]="['/article', art.id]">
           <h3 class="text-muted pb-2">{{ art.title }}</h3>
         </a>
         <small class="text-muted">{{ art.writtenDate }}   作者：{{ art.author }}</small>

@@ -14,4 +14,8 @@ export class ArticleService {
             this.recentArticles = data;
         })
     }
+
+    getArticle(id: number): Article {
+        return this.articles.find(item => item.id == id);
+    }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from "../../model/article.service";
 import { Article } from "../../model/article.model";
+//import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
